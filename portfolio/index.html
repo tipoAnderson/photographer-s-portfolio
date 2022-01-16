@@ -14,24 +14,28 @@
     <div class="wrapper">
         <header class="header">
             <div class="container">
-                <div class="header__logo">
-                    <svg>
-                        <use href="img/icons/header.svg#logo"></use>
-                    </svg>
-                </div>
-                <nav class="header__menu">
-                    <ul class="menu">
-                        <li class="menu__link">Skills</li>
-                        <li class="menu__link">Portfolio</li>
-                        <li class="menu__link">Video</li>
-                        <li class="menu__link">Price</li>
-                        <li class="menu__link">Contacts</li>
-                    </ul>
-                </nav>
-                <div class="header__switch-lng">
-                    <p class="switch-lng__en">en</p>
-                    <p class="switch-lng__fraction">/</p>
-                    <p class="switch-lng__ru">ru</p>
+                <div class="header__body">
+                    <div class="header__logo">
+                        <a href="">
+                            <svg>
+                                <use href="img/icons/header.svg#logo"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="menu">
+                            <li class="menu__link"><a href="#skills">Skills</a></li>
+                            <li class="menu__link"><a href="#portfolio">Portfolio</a></li>
+                            <li class="menu__link"><a href="#video">Video</a></li>
+                            <li class="menu__link"><a href="#price">Price</a></li>
+                            <li class="menu__link"><a href="#contacts">Contacts</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__switch-lng">
+                        <p class="switch-lng__en">en</p>
+                        <p class="switch-lng__fraction">/</p>
+                        <p class="switch-lng__ru">ru</p>
+                    </div>
                 </div>
             </div>
         </header>
@@ -41,57 +45,49 @@
                     <h1 class="hero__title">Alexa Rise</h1>
                     <p class="hero__text">Save sincere emotions, romantic feelings and happy moments of life together
                         with professional photographer Alexa Rise</p>
-                    <button class="hero__btn"><a href="">Hire me</a></button>
+                    <button><a class="hero__btn btn btn_act" href="">Hire me</a></button>
                 </section>
-                <section class="main__skills">
-                    <h2 class="skills__title">Skills</h2>
+                <section class="main__skills" id="skills">
+                    <h2 class="skills__title title">Skills</h2>
                     <div class="skills__items">
                         <div class="skills__item">
-                            <div class="skills__icon">
-                                <svg>
-                                    <use xlink:href="img/icons/skills.svg#camera"></use>
-                                </svg>
-                            </div>
-                            <div class="skills__title">Digital photography</div>
+                            <svg class="skills__icon">
+                                <use xlink:href="img/icons/skills.svg#camera"></use>
+                            </svg>
+                            <div class="skills__subtitle">Digital photography</div>
                             <div class="skills__text">High-quality photos in the studio and on the nature</div>
                         </div>
                         <div class="skills__item">
-                            <div class="skills__icon">
-                                <svg>
-                                    <use xlink:href="img/icons/skills.svg#video"></use>
-                                </svg>
-                            </div>
-                            <div class="skills__title">Video shooting</div>
+                            <svg class="skills__icon">
+                                <use xlink:href="img/icons/skills.svg#video"></use>
+                            </svg>
+                            <div class="skills__subtitle ">Video shooting</div>
                             <div class="skills__text">Capture your moments so that they always stay with you</div>
                         </div>
                         <div class="skills__item">
-                            <div class="skills__icon">
-                                <svg>
-                                    <use xlink:href="img/icons/skills.svg#image"></use>
-                                </svg>
-                            </div>
-                            <div class="skills__title">Retouch</div>
+                            <svg class="skills__icon">
+                                <use xlink:href="img/icons/skills.svg#image"></use>
+                            </svg>
+                            <div class="skills__subtitle">Retouch</div>
                             <div class="skills__text">I strive to make photography surpass reality</div>
                         </div>
                         <div class="skills__item">
-                            <div class="skills__icon">
-                                <svg>
-                                    <use xlink:href="img/icons/skills.svg#mic"></use>
-                                </svg>
-                            </div>
-                            <div class="skills__title">Audio</div>
+                            <svg class="skills__icon">
+                                <use xlink:href="img/icons/skills.svg#mic"></use>
+                            </svg>
+                            <div class="skills__subtitle">Audio</div>
                             <div class="skills__text">Professional sounds recording for video, advertising, portfolio
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="main__portfolio">
-                    <h2 class="portfolio__title">Portfolio</h2>
+                <section class="main__portfolio" id="portfolio">
+                    <h2 class="portfolio__title title">Portfolio</h2>
                     <div class="portfolio__btns">
-                        <button class="portfolio__btn"><a href="">Winter</a></button>
-                        <button class="portfolio__btn"><a href="">Spring</a></button>
-                        <button class="portfolio__btn"><a href="">Summer</a></button>
-                        <button class="portfolio__btn_act"><a href="">Autumn</a></button>
+                        <button><a class="portfolio__btn btn btn" href="">Winter</a></button>
+                        <button><a class="portfolio__btn btn btn" href="">Spring</a></button>
+                        <button><a class="portfolio__btn btn btn" href="">Summer</a></button>
+                        <button><a class="portfolio__btn btn btn_act" href="">Autumn</a></button>
                     </div>
                     <div class="portfolio__items">
                         <div class="portfolio__item"><img src="img/jpg/portfolio/portfolio-img.jpg" alt="Content">
@@ -108,20 +104,22 @@
                         </div>
                     </div>
                 </section>
-                <section class="main__video">
-                    <h2 class="video__title">Video</h2>
+                <section class="main__video" id="video">
+                    <h2 class="video__title title">Video</h2>
                     <div class="video__content">
-                        <img src="" alt="Video"></img>
-                        <svg>
-                            <use xlink:href="img/icons/video.svg#play"></use>
-                        </svg>
+                        <img src="img/jpg/video-player.jpg" alt="Video"></img>
+                        <button class="video__btn">
+                            <svg>
+                                <use xlink:href="img/icons/video.svg#play"></use>
+                            </svg>
+                        </button>
                     </div>
                 </section>
-                <section class="main__price">
-                    <h2 class="price__title">Price</h2>
+                <section class="main__price" id="price">
+                    <h2 class="price__title title">Price</h2>
                     <div class="price__items">
                         <div class="price__item">
-                            <div class="price__title">Standard</div>
+                            <div class="price__subtitle">Standard</div>
                             <div class="price__coast">500 $</div>
                             <div class="price__text">
                                 <p>One location</p>
@@ -130,10 +128,10 @@
                                 <p>Readiness 2-3 weeks</p>
                                 <p>Make up, visage</p>
                             </div>
-                            <div class="price__btn"><a href="">Order shooting</a></div>
+                            <button><a class="price__btn btn btn_act" href="">Order shooting</a></button>
                         </div>
                         <div class="price__item">
-                            <div class="price__title">Premium</div>
+                            <div class="price__subtitle">Premium</div>
                             <div class="price__coast">700 $</div>
                             <div class="price__text">
                                 <p>One or two locations</p>
@@ -142,10 +140,10 @@
                                 <p>Readiness 1-2 weeks</p>
                                 <p>Make up, visage</p>
                             </div>
-                            <div class="price__btn"><a href="">Order shooting</a></div>
+                            <button><a class="price__btn btn btn_act" href="">Order shooting</a></button>
                         </div>
                         <div class="price__item">
-                            <div class="price__title">Gold</div>
+                            <div class="price__subtitle">Gold</div>
                             <div class="price__coast">1000 $</div>
                             <div class="price__text">
                                 <p>Three locations or more</p>
@@ -154,42 +152,46 @@
                                 <p>Readiness 1 week</p>
                                 <p>Make up, visage, hairstyle</p>
                             </div>
-                            <div class="price__btn"><a href="">Order shooting</a></div>
+                            <button><a class="price__btn btn btn_act" href="">Order shooting</a></button>
                         </div>
                     </div>
                 </section>
-                <section class="main__contacts">
-                    <h2 class="contacts__title">Contact me</h2>
-                    <input class="contacts__field" type="email" placeholder="E-mail">
-                    <input class="contacts__field" type="tel" name="" id="" placeholder="Phone">
-                    <textarea class="contacts__field" name="" id="" cols="30" rows="10"
-                        placeholder="Message"></textarea>
-                    <button class="contacts__btn"><a href="">Send message</a></button>
+                <section class="main__contacts" id="contacts">
+                    <div class="contacts__body">
+                        <h2 class="contacts__title">Contact me</h2>
+                        <input class="contacts__field" type="email" placeholder="E-mail">
+                        <input class="contacts__field" type="tel" name="" id="" placeholder="Phone">
+                        <textarea class="contacts__field contacts__field_text" name="" id=""
+                            placeholder="Message"></textarea>
+                        <button><a class="contacts__btn btn btn_act" href="">Send message</a></button>
+                    </div>
                 </section>
             </div>
         </main>
         <footer class="footer">
             <div class="container">
-                <div class="footer__data">
-                    <p>©</p>
-                    <p>2022</p>
-                    <p><a href="">github</a></p>
+                <div class="footer__body">
+                    <div class="footer__data">
+                        <p>©</p>
+                        <p>2022</p>
+                        <p><a href="https://github.com/tipoAnderson">github</a></p>
+                    </div>
+                    <div class="footer__rss"><a href="https://rs.school/js-stage0/">Rolling Scopes School</a></div>
+                    <ul class="footer__social">
+                        <li><a href=""><svg>
+                                    <use xlink:href="img/icons/footer.svg#inst"></use>
+                                </svg></a></li>
+                        <li><a href=""><svg>
+                                    <use xlink:href="img/icons/footer.svg#fb"></use>
+                                </svg></a></li>
+                        <li><a href=""><svg>
+                                    <use xlink:href="img/icons/footer.svg#tw"></use>
+                                </svg></a></li>
+                        <li><a href=""><svg>
+                                    <use xlink:href="img/icons/footer.svg#pinterest"></use>
+                                </svg></a></li>
+                    </ul>
                 </div>
-                <div class="footer__rss">Rolling Scopes School<a href=""></a></div>
-                <ul class="footer__social">
-                    <li><a href=""><svg>
-                                <use xlink:href="img/icons/footer.svg#inst"></use>
-                            </svg></a></li>
-                    <li><a href=""><svg>
-                                <use xlink:href="img/icons/footer.svg#fb"></use>
-                            </svg></a></li>
-                    <li><a href=""><svg>
-                                <use xlink:href="img/icons/footer.svg#tw"></use>
-                            </svg></a></li>
-                    <li><a href=""><svg>
-                                <use xlink:href="img/icons/footer.svg#pinterest"></use>
-                            </svg></a></li>
-                </ul>
             </div>
         </footer>
     </div>
