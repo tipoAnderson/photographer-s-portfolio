@@ -9,6 +9,10 @@ html {
 }
 body {
     background-color: #000;
+	
+}
+body.lock {
+	overflow: hidden;
 }
 .wrapper {
 	width: 100%; 
@@ -57,9 +61,25 @@ body {
 
 		&__menu {
             margin-left: auto;
-            color: white;
 			@media (max-width: 769px){
-				display: none;
+				position: fixed;
+				top: 0;
+				right: -620px;
+				transition: all 0.5s ease 0s;
+				&.active {
+					display: block;
+					right: 0;
+					transition: all 0.5s ease 0s;
+					z-index: 2;
+					width: 80.7%;
+					height: 100%;
+					padding: 134px 0 0 127px;
+					background-color: #000;
+					overflow: auto;
+					@media (max-width: 619px){
+						width: 100%;
+					}
+				}
 			}
 		}
 
@@ -78,6 +98,8 @@ body {
             	width: 50px;
             	margin: 10px 0;
             	position: relative;
+				z-index: 5;
+				cursor: pointer;
             		&::before {
             		    content: '';
             		    background-color: #fff;
@@ -109,14 +131,40 @@ body {
             		}
 			}
 		}
+		&__burger.active::before {
+			transform: rotate(45deg);
+			top: 9px;
+		}  
+	
+		&__burger.active span {
+			transform: scale(0);
+		}
+	
+		&__burger.active::after {
+			transform: rotate(-45deg);
+			top: 9px;
+		}  
+	
 }
 .menu {
     
     display: flex;
+	@media (max-width: 769px){
+		display: block;
+	}
 		&__link {
             padding-left: 31px;
+			@media (max-width: 769px){
+				padding-left: 0;
+				margin-bottom: 15px;
+			}
             a {
+				font-family: Inter;
                 color: white;
+				@media (max-width: 769px){
+					font-size: 34.8235px;
+					line-height: 73px;
+				}
 				&:hover {
 					color: #BDAE82;
 					transition-duration: 0.5s;
