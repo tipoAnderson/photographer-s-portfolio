@@ -394,6 +394,7 @@ body.lock {
 
 .switch-lng__en {
   color: #BDAE82;
+  cursor: pointer;
 }
 
 .switch-lng__fraction {
@@ -410,6 +411,7 @@ body.lock {
 .switch-lng__ru {
   padding-left: 10px;
   color: white;
+  cursor: pointer;
 }
 
 @media (max-width: 769px) {
@@ -933,11 +935,13 @@ body.lock {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .price__item button {
-  padding-top: 40px;
-  background-color: rgba(0, 0, 0, 0);
+  margin-top: 40px;
 }
 
 @media (max-width: 769px) {

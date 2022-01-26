@@ -176,6 +176,7 @@ body.lock {
     
 		&__en {
             color: #BDAE82;
+			cursor: pointer;
 		}
 
 		&__fraction {
@@ -189,6 +190,7 @@ body.lock {
 		&__ru {
             padding-left: 10px;
             color: white;
+			cursor: pointer;
 			@media (max-width: 769px){
 				padding-left: 15px;
 			}
@@ -411,9 +413,6 @@ body.lock {
 			}
 		}
 
-		&__btn {
-		}
-
 		&__items {
 			margin: 60px 20px 0 20px;
 			display: flex;
@@ -560,9 +559,9 @@ body.lock {
 			border: 3px solid #BDAE82;
 			display: flex;
 			flex-direction: column;
+			align-items: center;
 			button {
-				padding-top: 40px;
-				background-color: rgba($color: #000000, $alpha: 0);
+				margin-top: 40px;
 			}
 			@media (max-width: 769px){
 				width: 420px;
