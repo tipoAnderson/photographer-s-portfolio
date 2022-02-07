@@ -1,4 +1,3 @@
-//import i18Obj from './translate';
 
 document.querySelector('.header__burger').onclick = function () {
     document.querySelector('.header__burger').classList.toggle('active');
