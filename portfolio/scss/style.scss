@@ -175,8 +175,11 @@ body.lock {
 .switch-lng {
     
 		&__en {
-            color: #BDAE82;
+            color: white;
 			cursor: pointer;
+			&_act {
+				color: #BDAE82;
+			}
 		}
 
 		&__fraction {
@@ -191,6 +194,9 @@ body.lock {
             padding-left: 10px;
             color: white;
 			cursor: pointer;
+			&_act {
+				color: #BDAE82;
+			}
 			@media (max-width: 769px){
 				padding-left: 15px;
 			}
@@ -450,39 +456,86 @@ body.lock {
 		}
 
 		&__content {
-			margin: 0 20px;
-			position: relative;
+			video {
+				width: 100%;
+			}
+			//margin: 0 78px;
+			//position: relative;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			@media (max-width: 769px){
-				margin: 0;
+			flex-direction: column;
+			border: 2px solid #BDAE82;
+			// @media (max-width: 769px){
+			// 	margin: 0;
+			// }
+		}
+
+		&__controls {
+			height: 50px;
+			min-width: 100%;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+
+		&__play {
+			cursor: pointer;
+		}
+
+		&__pause {
+		}
+
+		&__progress {
+		}
+
+		&__range {
+			-webkit-appearance: none;
+			height: 8px;
+			
+			&::-webkit-slider-thumb{
+				-webkit-appearance: none;
+				height: 12px;
+				width: 12px;
+				border-radius: 50%;
+				background-color: #fff;
+				cursor: pointer;
+			}
+			&::-moz-range-thumb{
+				-moz-appearance: none;
+				height: 12px;
+				width: 12px;
+				border-radius: 50%;
+				background-color: #fff;
+				cursor: pointer;
+			}
+			&_video {
+				width: 400px;
+			}
+			&_volume {
 			}
 		}
 
-		&__body	{
+		&__time {
+			font-family: Merriweather;
+			color: #fff;
+			font-size: 20px;
+		}
 
-			@media (max-width: 769px){
-				height: 418px;
-				width: auto;
-				overflow: hidden;
-			}
-			@media (max-width: 750px){
-				height: auto;
-			}
-			img {
-				width: 100%;
-				height: 100%;
-				@media (max-width: 769px){
-					object-fit: cover;
-					object-position: -6px 1px;
-				}
-				@media (max-width: 750px){
-					// width: 100%;
-					// height: 100%;
-					object-fit: cover;
-					object-position: 0 0;
-				}
+		&__volume {
+			fill: #fff;
+			width: 20px;
+			height: 20px;
+		}
+
+		&__mute {
+			background-image: url(../assets/svg/video/volume.svg);
+			width: 36px;
+			height: 36px;
+			&_mute {
+				background-image: url(../assets/svg/video/mute.svg);
+				width: 36px;
+				height: 36px;
 			}
 		}
 
